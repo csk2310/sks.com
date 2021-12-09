@@ -1,7 +1,7 @@
 <?php
-$name= $_POST['Pname'];
-$email= $_POST['email-address'];
-$Number= $_POST['Phone-number'];
+$Name= $_POST['name'];
+$Email= $_POST['email'];
+$Number= $_POST['phone'];
 $Message= $_POST['message'];
 $to = "sukret916@gmail.com";
 $subject = "Mail from test site";
@@ -10,6 +10,6 @@ $text = "Name =".$name. "\r\nEmail =".$email."\r\nNumber =".$Number."\r\nMessage
 $headers = "From: noreply@sks.com";
 if($email!=NULL)
 {
-	mail($to, $subject, $text , $message);
+	mail($to, $subject, $text , $Message);
 }
 ?>
